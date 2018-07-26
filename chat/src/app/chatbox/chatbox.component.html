@@ -1,0 +1,25 @@
+<div class="row" style="margin: 0;border-bottom: 1px solid #ddd;">
+  <div class="col-sm-4" style="padding: 0;">
+    <app-userlist (selectuser)="onSelctUser($event)"></app-userlist>
+  </div>
+  <div class="col-sm-8 box-container"  style="padding: 0;">
+    <div class="message-container">
+      <div class="">
+        <div class="clearfix" *ngFor="let u of user.messages" [ngClass]="{self: isSelf(u.createdBy)}">
+          <div class=" message-img-wraper">
+            <span class="image-span"><img src="{{user.img}}" class=""/></span>
+          </div>
+          <div class=" message-text-wraper">
+            <span class="message-span">{{u.text}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="input-wraper">
+      <input class="comments-section" />
+      <span class="send">SEND</span>
+    </div>   
+  </div>
+</div>
+

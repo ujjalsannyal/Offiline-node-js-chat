@@ -1,0 +1,44 @@
+.userlist-wraper{
+    width: 100%;
+    height: 100%;
+}
+.userlist-ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.userlist-li{
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    /* border-top: 0; */
+}
+.userlist-li:hover, .userlist-li.active{
+    background: #4286f4;
+    /* transform: scale(1.03); */
+    color: #fff;
+}
+.image-span{
+    display: inline-block;
+}
+.image-span img{
+    height: 54px;
+    width: 54px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.user-name-warper{
+    display: inline-block;
+    width: calc(100% - 60px);
+    padding-left: 10px;
+}
+.user-name-warper .user-name{
+    display: block;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.user-name-warper .last-message{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999999;
+}

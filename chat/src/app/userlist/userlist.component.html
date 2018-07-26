@@ -1,0 +1,11 @@
+<div class="userlist-wraper">
+  <ul class="userlist-ul">
+    <li class="userlist-li" *ngFor="let c of userlist; let i = index" (click)="activeChat($event, c.id, i)" attr.userid="{{c.id}}" [ngClass]="{active: isActive(c.id)}">
+      <div class="image-span"><img src="{{c.img}}"></div>
+      <div class="user-name-warper" attr.userid="{{c.id}}">
+        <span class="user-name">{{c.user}}</span>
+        <span class="last-message" *ngIf="c.messages[c.messages.length - 1]">{{c.messages[c.messages.length - 1].text}}</span>
+      </div>
+    </li>
+  </ul>
+</div>

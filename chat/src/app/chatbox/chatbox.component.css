@@ -1,0 +1,65 @@
+.box-container{
+    
+    border-left: 1px solid #ddd;
+}
+.message-container{
+    height: 500px;
+    background: #f7f7f7;
+}
+.input-wraper{
+    padding: 0;
+    height: 50px;
+    position: relative;
+}
+.input-wraper .comments-section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #dddddd;
+    border-left: 0;
+    border-bottom: 0;
+    outline: none;
+    padding: 10px
+}
+
+.input-wraper .send{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #4286f4;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.image-span{
+    display: inline-block;
+}
+.image-span img{
+    height: 54px;
+    width: 54px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.message-img-wraper{
+    padding: 10px;
+}
+.message-text-wraper{
+
+}
+.message-img-wraper, .message-text-wraper{
+    float: right;
+}
+.self .message-img-wraper, .self .message-text-wraper{
+    float: left;
+}
+
+.message-span{
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    background: #ddd;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
